@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Write to File 1.0</title>
-  </head>
-  <body>
-    <form>
-      <label for="text-input">Enter text:</label>
-      <input type="text" id="text-input" name="text-input">
-      <button type="submit" id="submit-btn">Submit</button>
-    </form>
-    
-    <script src="write-to-file.js"></script>
-  </body>
+<head>
+	<title>Button Example</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		function writeToDataFile() {
+			$.ajax({
+				url: "https://api.github.com/repos/YOUR_USERNAME/YOUR_REPOSITORY/contents/data.txt",
+				type: "PUT",
+				headers: {
+					Authorization: "Token YOUR_ACCESS_TOKEN"
+				},
+				data: JSON.stringify({
+					message: "write hello to data.txt",
+					content: btoa("hello")
+				}),
+				success: function(response) {
+					console.log("File written successfully!");
+				},
+				error: function(xhr, status, error) {
+					console.error(error);
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	<button onclick="writeToDataFile()">Write to Data File</button>
+</body>
 </html>
-
