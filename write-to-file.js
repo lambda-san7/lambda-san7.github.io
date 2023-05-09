@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     xhr.open('POST', 'write-to-file.php');
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.onload = function() {
+      console.log(xhr.status)
       if (xhr.status === 200) {
         console.log('File written successfully');
       } else {
