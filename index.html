@@ -4,6 +4,7 @@
 	<title>Button Example</title>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script>
+		const mySecretVariable = process.env.TOKEN;
 		function writeToDataFile() {
 			$.ajax({
 				url: "https://api.github.com/repos/lambda-san7/lambda-san7.github.io/contents/data.txt",
