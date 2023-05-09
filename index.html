@@ -1,36 +1,30 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Button Example</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="application/json" id="env-vars">
-        {
-            "TOKEN": "your-token-here"
-        }
-    </script>
     <script>
-        const envVars = JSON.parse(document.getElementById("env-vars").textContent);
-        const token = envVars.TOKEN;
-function writeToDataFile() {
-    $.ajax({
-        url: "https://api.github.com/repos/lambda-san7/lambda-san7.github.io/contents/data.txt",
-        type: "PUT",
-        contentType: "application/json",
-        headers: {
-            Authorization: "Bearer " + token
-        },
-        data: JSON.stringify({
-            message: "write hello to data.txt",
-            content: btoa("hello")
-        }),
-        success: function(response) {
-            console.log("File written successfully!");
-        },
-        error: function(xhr, status, error) {
-            console.error(error);
+        const token = '<%= token %>';
+        function writeToDataFile() {
+            $.ajax({
+                url: "https://api.github.com/repos/lambda-san7/lambda-san7.github.io/contents/data.txt",
+                type: "PUT",
+                headers: {
+                    Authorization: "Token " + token
+                },
+                data: JSON.stringify({
+                    message: "write hello to data.txt",
+                    content: btoa("hello")
+                }),
+                success: function(response) {
+                    console.log("File written successfully!");
+                },
+                error: function(xhr, status, error) {
+                    console.error(error);
+                }
+            });
         }
-    });
-}
     </script>
 </head>
 <body>
