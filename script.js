@@ -1,5 +1,5 @@
 function dateCalc(date) {
-    const oneDay = 24 * 60 * 60 * 1000; // One day in milliseconds
+    const oneDay = 24 * 60 * 60 * 1000;
     const currentDate = new Date();
     const diffDays = Math.floor(Math.abs((currentDate - date) / oneDay));
     if(diffDays >= 30){
