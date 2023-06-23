@@ -1,0 +1,155 @@
+html {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    outline: 1px solid rgb(0, 0, 0);
+    user-select: none;
+    overflow-x: hidden;
+    cursor: url;
+}
+
+.profile {
+    float: left;
+    display: flex;
+    position: sticky;
+    outline: 2px solid rgb(255, 255, 255);
+    background-color: rgb(15, 15, 15);
+    padding: 10px;
+    border-radius: 20px;
+    width: 30%;
+    transition: 1s;
+    overflow-x: scroll;
+}
+
+.profile:hover {
+    border-radius: 1px;
+}
+
+.profile .info {
+    float: left;
+    padding: 10px; 
+    width: 100px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.profile .info:hover {
+    border-radius: 1px;
+}
+
+.profile .info .icon {
+    outline: 2px solid rgb(255, 255, 255);
+    border-radius: 100px;
+}
+
+.profile .skills {
+    float: right;
+    padding: 10px; 
+    width: 300px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.profile .skills:hover {
+    border-radius: 1px;
+}
+
+.projects {
+    top: 10px;
+    float: right;
+    display: flex;
+    position: sticky;
+    outline: 2px solid rgb(255, 255, 255);
+    background-color: rgb(15, 15, 15);
+    padding: 10px;
+    border-radius: 20px;
+    width: 65%;
+    transition: 1s;
+    overflow-x: scroll;
+}
+
+.projects:hover {
+    border-radius: 1px;
+}
+
+.projects .box {
+    float: left;
+    margin: 5px;
+    padding: 10px; 
+    width: 100px;
+    border-radius: 20px;
+    outline: 2px solid rgb(255, 255, 255);
+    cursor: help;
+    transition: 1s;
+    overflow-x: scroll;
+}
+
+.projects .box:hover {
+    border-radius: 1px;
+}
+
+.projects .box .icon {
+    outline: 2px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-bottom: 5px;
+}
+
+.projects .box .text {
+    margin-top: 10px;
+}
+
+.backText {
+    position: absolute;
+    -webkit-text-stroke: 3px black;
+}
+
+.frontText {
+    position: absolute;
+}
+
+
+#pythonLi {
+    color: #4c93ce;
+}
+
+#htmlLi {
+    color: #ff572d;
+}
+
+#cssLi {
+    color: #946ad3;
+}
+
+#jsLi {
+    color: #F0E05B;
+}
+
+#javaLi {
+    color: #ff0e12;
+}
+
+.text {
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #111111;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #242424;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #444444;
+}
