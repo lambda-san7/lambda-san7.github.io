@@ -12,34 +12,27 @@ html {
 .profile {
     float: left;
     display: flex;
-    position: sticky;
-    outline: 2px solid rgb(255, 255, 255);
-    background-color: rgb(15, 15, 15);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(50, 50, 50);
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 30%;
     transition: 1s;
-    overflow-x: scroll;
+    height: 200px;
 }
 
-.profile:hover {
-    border-radius: 1px;
-}
 
 .profile .info {
     float: left;
     padding: 10px; 
     width: 100px;
-    border-radius: 20px;
+    border-radius: 5px;
     transition: 1s;
 }
 
-.profile .info:hover {
-    border-radius: 1px;
-}
 
 .profile .info .icon {
-    outline: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 100px;
 }
 
@@ -47,65 +40,57 @@ html {
     float: right;
     padding: 10px; 
     width: 300px;
-    border-radius: 20px;
+    border-radius: 5px;
     transition: 1s;
 }
 
-.profile .skills:hover {
-    border-radius: 1px;
-}
 
 .projects {
     top: 10px;
     float: right;
-    display: flex;
-    position: sticky;
-    outline: 2px solid rgb(255, 255, 255);
-    background-color: rgb(15, 15, 15);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(50, 50, 50);
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 65%;
     transition: 1s;
-    overflow-x: scroll;
 }
 
-.projects:hover {
-    border-radius: 1px;
-}
 
 .projects .box {
     float: left;
     margin: 5px;
     padding: 10px; 
     width: 100px;
-    border-radius: 20px;
-    outline: 2px solid rgb(255, 255, 255);
-    cursor: help;
+    border-radius: 5px;
+    cursor: pointer;
     transition: 1s;
-    overflow-x: scroll;
-}
-
-.projects .box:hover {
-    border-radius: 1px;
 }
 
 .projects .box .icon {
-    outline: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 100px;
     margin-bottom: 5px;
 }
 
-.projects .box .text {
-    margin-top: 10px;
+
+.blogs {
+    position: absolute;
+    top: 260px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+    width: 96%;
+    border-radius: 5px;
+    transition: 1s;
 }
 
-.backText {
-    position: absolute;
-    -webkit-text-stroke: 3px black;
-}
-
-.frontText {
-    position: absolute;
+.blogs .box {
+    margin: 5px;
+    padding: 10px; 
+    width: 100px;
+    border-radius: 5px;
+    transition: 1s;
 }
 
 
