@@ -24,12 +24,14 @@ let htmlBox= document.getElementById("html");
 let cssBox= document.getElementById("css");
 let jsBox= document.getElementById("js");
 let javaBox= document.getElementById("java");
+let cBox= document.getElementById("c");
 
 const pythonDate = new Date('2022-10-17');
-const htmlDate = new Date('2018-6-03');
+const htmlDate = new Date('2018-6-3');
 const cssDate = new Date('2022-2-11');
 const jsDate = new Date('2022-2-10');
 const javaDate = new Date('2023-1-6');
+const javaDate = new Date('2023-6-29');
 
 pythonBox.innerHTML = dateCalc(pythonDate)
 
@@ -40,3 +42,5 @@ cssBox.innerHTML = dateCalc(cssDate)
 jsBox.innerHTML = dateCalc(jsDate)
 
 javaBox.innerHTML = dateCalc(javaDate)
+
+cBox.innerHTML = dateCalc(cDate)
