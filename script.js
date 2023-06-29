@@ -31,7 +31,7 @@ const htmlDate = new Date('2018-6-3');
 const cssDate = new Date('2022-2-11');
 const jsDate = new Date('2022-2-10');
 const javaDate = new Date('2023-1-6');
-const javaDate = new Date('2023-6-29');
+const cDate = new Date('2023-6-29');
 
 pythonBox.innerHTML = dateCalc(pythonDate)
 
