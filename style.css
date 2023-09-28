@@ -61,6 +61,7 @@ html {
     border-radius: 5px;
     cursor: pointer;
     transition: 1s;
+    text-align: center;
 }
 
 .projects .box .icon {
@@ -85,27 +86,6 @@ html {
     width: 80%;
     border-radius: 5px;
     transition: 1s;
-}
-
-
-#pythonLi {
-    color: #4c93ce;
-}
-
-#htmlLi {
-    color: #ff572d;
-}
-
-#cssLi {
-    color: #946ad3;
-}
-
-#jsLi {
-    color: #F0E05B;
-}
-
-#javaLi {
-    color: #ff0e12;
 }
 
 .text {
