@@ -5,6 +5,7 @@ function dateCalc(date) {
     const oneDay = 24 * 60 * 60 * 1000;
     const currentDate = new Date();
     const diffDays = Math.floor(Math.abs((currentDate - date) / oneDay));
+    thisThing = "< Month"
     if(diffDays >= 30){
         thisThing = "1 Month"
         if(diffDays >= 30){
