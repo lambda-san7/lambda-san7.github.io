@@ -111,7 +111,7 @@ class project{
     }
 }
 
-new project("Rat Fight.","https://github.com/lambda-san7/Rat-Fighter","assets/rat fighter classic.png")
+new project("Rat Fight.","https://github.com/lambda-san7/Rat-Fighter","assets/rat fighter.png")
 new project("RF Classic","https://github.com/lambda-san7/Rat-Fighter-Classic","assets/rat fighter classic.png")
 new project("Checklist","https://lambda-san7.github.io/checklist","assets/checklistlogo.png")
 new project("DVD","https://lambda-san7.github.io/dvd","assets/dvd bounce.png")
